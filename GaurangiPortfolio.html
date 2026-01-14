@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/portfolio.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Portfolio</title>
+        
+        <link rel="stylesheet" href="./GaurangiPortfolio_files/portfolio.css">
+         <link rel="stylesheet" href="./GaurangiPortfolio_files/introduction.css">
+         <link href="./GaurangiPortfolio_files/css2" rel="stylesheet">
+        <link rel="stylesheet" href="./GaurangiPortfolio_files/skill.css">
+        <link rel="stylesheet" href="./GaurangiPortfolio_files/project.css">
+        <link rel="stylesheet" href="./GaurangiPortfolio_files/all.min.css">
+        <link rel="stylesheet" href="./GaurangiPortfolio_files/contact.css">
+    </head>
+    <body>
+        <nav class="navbar">
+
+            <a href="http://127.0.0.1:5500/portfolio.html#introduction" class="nav-btn">Introduction</a>
+            <a href="http://127.0.0.1:5500/portfolio.html#skills" class="nav-btn">Skills</a>
+            <a href="http://127.0.0.1:5500/portfolio.html#projects" class="nav-btn">Projects</a>
+            <a href="http://127.0.0.1:5500/portfolio.html#contact" class="nav-btn">Contact</a>
+        </nav>
+
+        <style>
+            body {
+                
+                background-image: url("black.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                color:white;
+            }
+        </style>
+ 
+
+        <div id="home" class="namaste-container">
+            नमस्ते
+        </div>
+
+        <div id="introduction" class="introduction">
+
+            <strong>Hello, I’m Gaurangi Garg</strong> a B.Tech 1st year Computer Science Engineering student with a strong interest in software development and web technologies. I have learned C and Python, which have helped me build a solid foundation in programming and problem-solving.
+            Currently, I am exploring C++ to strengthen my understanding of data structures and algorithms, along with front-end development using HTML and CSS. I am enthusiastic about learning new technologies, building practical projects, and continuously improving my technical skills.
+            This portfolio showcases my academic journey, technical skills, and the projects I am working on as I grow as a computer science student and aspiring developer.
+        </div>
+        <h2 id="skills" class="skills-title">Skills</h2>
+
+
+    <div class="skills-container">
+        <div class="skills-row">
+            <div class="skill-box">C</div>
+            <div class="skill-box">Python</div>
+        </div>
+
+        <div class="skills-row">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+        </div>
+    </div>
+    <h2 id="projects" class="projects-title">Projects</h2>
+
+    <div class="projects-container">
+
+    <div class="project-card">
+        <div class="project-tag">C</div>
+        <h3 class="project-title">Contact Management System</h3>
+        <p class="project-desc">
+            A console-based contact management system built in C
+            to store, search, update, and delete contact details efficiently.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <div class="project-tag">HTML / CSS</div>
+        <h3 class="project-title">My Portfolio</h3>
+        <p class="project-desc">
+            A personal portfolio website showcasing my skills,
+            projects, and learning journey using HTML and CSS.
+        </p>
+        </div>
+
+    </div>
+    <h2 id="contact" class="contact-title">Contact</h2>
+
+
+    <section class="contact-section">
+
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>
+                <span>Email:</span>
+                <a href="mailto:gaurangigg12@gmail.com">
+                    gaurangigg12@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>
+                <span>Mobile No.:</span>
+                <a href="tel:+919258546474">
+                    +91 9258546474
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <p>
+                <span>GitHub:</span>
+                <a href="https://github.com/gaurangiigarg" target="_blank">
+                    github.com/gaurangigarg
+                </a>
+            </p>
+        </div>
+
+    </section>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
